@@ -1,0 +1,84 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  width: 100%;
+  margin: 4rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.heading {
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.formGroup {
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.label {
+  display: block;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+
+.textarea {
+  width: 100%;
+  min-height: 150px;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+.buttonRow {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+}
+
+.button {
+  display: inline-flex;         /* make anchors flex items too */
+  justify-content: center;      /* center text */
+  align-items: center;          /* center text */
+  flex: 1;                      /* equal width in .buttonRow */
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;        /* remove link underline */
+  transition: background-color 0.2s ease;
+}
+
+.buttonConfirm {
+  background-color: #0070f3;
+  color: #fff;
+}
+
+.buttonConfirm:hover {
+  background-color: #0059c1;
+}
+
+.buttonCancel {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+.buttonCancel:hover {
+  background-color: #c6c6c6;
+}
+
+.buttonRow {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+}

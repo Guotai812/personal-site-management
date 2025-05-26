@@ -1,3 +1,4 @@
+// app/dashboard/page.js (or wherever your Dashboard lives)
 import { verifyToken } from '@/lib/auth';
 import Link from 'next/link';
 import styles from './page.module.css';
@@ -9,7 +10,20 @@ export default function Dashboard() {
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>Welcome, {user.username}</h1>
-      <Link href="/dashboard/exps" className={styles.button}>Experiences</Link>
+
+      {/* add this wrapper */}
+      <div className={styles.linkRow}>
+        <Link href="/dashboard/introduction" className={styles.button}>
+          Introduction
+        </Link>
+        <Link href="/dashboard/exps" className={styles.button}>
+          Experience
+        </Link>
+        <Link href="/dashboard/exps" className={styles.button}>
+          Projects
+        </Link>
+      </div>
+
       <Logout />
     </div>
   );

@@ -1,32 +1,36 @@
+/* page.module.css */
+
 .container {
-  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f7f7f7;
-  padding: 2rem;
+  height: 100vh;
+  background-color: #f5f6fa;
+  padding: 1rem;
 }
 
 .box {
-  background-color: white;
+  background-color: #ffffff;
   padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   max-width: 400px;
   width: 100%;
   text-align: center;
 }
 
 .heading {
-  font-size: 1.5rem;
-  color: #222;
-  margin-bottom: 1rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+  color: #2d3436;
 }
 
 .message {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   font-size: 1rem;
-  color: #555;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
+  color: #636e72;
 }
 
 .buttons {
@@ -35,21 +39,37 @@
   gap: 1rem;
 }
 
+/* Cancel link styled as a button */
 .cancelButton {
-  background-color: #ccc;
-  border: none;
-  padding: 0.5rem 1.2rem;
-  border-radius: 8px;
-  cursor: pointer;
-  font-weight: bold;
+  flex: 1;
+  display: inline-block;
+  padding: 0.6rem 1rem;
+  background-color: #dfe6e9;
+  color: #2d3436;
+  text-decoration: none;
+  border-radius: 0.25rem;
+  font-weight: 500;
+  font-family: inherit;
+  transition: background-color 0.2s;
+  text-align: center;
+}
+.cancelButton:hover {
+  background-color: #b2bec3;
 }
 
+/* Confirm delete button */
 .confirmButton {
-  background-color: #e63946;
-  color: white;
+  flex: 1;
+  padding: 0.6rem 1rem;
+  background-color: #e17055;
+  color: #ffffff;
   border: none;
-  padding: 0.5rem 1.2rem;
-  border-radius: 8px;
+  border-radius: 0.25rem;
+  font-weight: 600;
+  font-family: inherit;
   cursor: pointer;
-  font-weight: bold;
+  transition: background-color 0.2s;
+}
+.confirmButton:hover {
+  background-color: #d35400;
 }

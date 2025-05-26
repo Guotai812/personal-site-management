@@ -15,6 +15,20 @@
   margin-bottom: 2rem;
 }
 
+.linkRow {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  width: 100%;          /* allow children to flex across full width */
+  max-width: 600px;     /* optional container max-width */
+}
+
+.linkRow .button {
+  flex: 1;               /* each button takes equal share */
+  text-align: center;    /* center the link text */
+}
+
 .button {
   padding: 0.75rem 1.5rem;
   background-color: #0070f3;
@@ -25,10 +39,8 @@
   cursor: pointer;
   transition: background-color 0.3s ease;
   text-decoration: none;
-  display: inline-block;
 }
 
 .button:hover {
   background-color: #0059c1;
 }
-
