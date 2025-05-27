@@ -1,0 +1,140 @@
+/* SimpleProjectForm.module.css */
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fafafa;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.formGroup {
+  margin-bottom: 1.5rem;
+}
+
+.formGroup label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.input,
+.textarea {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.fieldset {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 1.5rem;
+}
+
+.legend {
+  font-weight: 600;
+  padding: 0 0.5rem;
+}
+
+.techniqueRow {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.techniqueRow input {
+  flex: 1;
+}
+
+.deleteButton {
+  margin-left: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  background: #e74c3c;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.deleteButton:hover {
+  background: #c0392b;
+}
+
+.addButton {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.addButton:hover {
+  background: #2980b9;
+}
+
+.submitButton {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background: #2ecc71;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.submitButton:hover {
+  background: #27ae60;
+}
+
+/* SimpleProjectForm.module.css */
+/* …existing styles… */
+
+.cancelLink {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 0.75rem;
+  margin-top: 1rem;
+  color: #333;
+  background: #e0e0e0;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.cancelLink:hover {
+  background: #ccc;
+}
+
+.submitButton:disabled {
+  background: #95a5a6;       /* a muted grey */
+  cursor: not-allowed;      /* show the “no-go” pointer */
+  opacity: 0.6;             /* visually de-emphasize */
+}
+
+/* If you also want to style your “+ Add Technique” when disabled: */
+.addButton:disabled {
+  background: #95a5a6;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* And same for delete, if you ever disable it: */
+.deleteButton:disabled {
+  background: #95a5a6;
+  cursor: not-allowed;
+  opacity: 0.6;
+}

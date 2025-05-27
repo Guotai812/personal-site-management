@@ -1,0 +1,106 @@
+/* ProjectsPage.module.css */
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.heading {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.item {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.info {
+  /* ensure some breathing room below the “View” button */
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0 0 10px;
+}
+
+.description {
+  font-size: 1rem;
+  color: #333;
+  margin: 0 0 15px;
+}
+
+.techList {
+  margin: 0 0 15px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.techItem {
+  background: #f0f0f0;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+}
+
+.button {
+  display: inline-block;
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  background-color: #0070f3;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.button:hover {
+  background-color: #005bb5;
+}
+
+.deleteButton {
+  display: inline-block;
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  background-color: #e00;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.deleteButton:hover {
+  background-color: #c00;
+}
+
+/* NEW: lay out the Edit/Delete links in a row with some gap */
+.links {
+  display: flex;
+  gap: 10px;
+  /* push it down a bit from the “View” button */
+  margin-top: 10px;
+}
+
+/* NEW: center the bottom buttons and add spacing */
+.addWrapper {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 30px;
+}

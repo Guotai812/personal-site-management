@@ -5,6 +5,7 @@ import styles from './page.module.css';
 import Logout from '@/components/logout';
 
 export default function Dashboard() {
+  // to fetch name of login user instead of verifing token.
   const user = verifyToken();
 
   return (
@@ -19,7 +20,7 @@ export default function Dashboard() {
         <Link href="/dashboard/exps" className={styles.button}>
           Experience
         </Link>
-        <Link href="/dashboard/exps" className={styles.button}>
+        <Link href="/dashboard/projects" className={styles.button}>
           Projects
         </Link>
       </div>
