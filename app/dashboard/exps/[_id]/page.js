@@ -4,7 +4,7 @@ import { editExp } from '@/lib/action';
 import Link from 'next/link';
 
 export default async function ExperienceForm({params}) {
-    const { _id } = params;
+    const { _id } = await params;
     const exp = await getExp(_id);
     async function handleSubmit(formData) {
         "use server";

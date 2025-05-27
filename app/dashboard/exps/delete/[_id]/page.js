@@ -4,8 +4,8 @@ import { deleteExperience } from "@/lib/action";
 import styles from "./page.module.css";
 import Link from "next/link";
 
-export default function DeleteConfirmPage({ params }) {
-  const { _id } = params;
+export default async function DeleteConfirmPage({ params }) {
+  const { _id } = await params;
 
   return (
     <div className={styles.container}>
