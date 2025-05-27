@@ -55,7 +55,7 @@ export default async function ProjectsPage() {
         <Link href="/dashboard/projects/new" className={styles.button}>
           Add Project
         </Link>
-        <Link href="/dashboard/projects" className={styles.button}>
+        <Link href="/dashboard" className={styles.button}>
           Back
         </Link>
       </div>
