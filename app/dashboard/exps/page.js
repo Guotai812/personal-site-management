@@ -34,6 +34,9 @@ export default async function ExperienceList() {
         <Link href="/dashboard/exps/new" className={styles.button}>
           Add New
         </Link>
+        <Link href="/dashboard/" className={styles.button}>
+          Back
+        </Link>
       </div>
     </div>
   );
