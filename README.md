@@ -26,12 +26,12 @@ This is the management interface for my personal website. It provides a secure w
 > This management panel is intended for **personal use only** and is not publicly deployed.
 
 ## Screenshots
-![Homepage](public/screenshots/homepage.png)
-![LoginPage](public/screenshots/login.png)
-![Signup](public/screenshots/signup.png)
-![Dashboard](public/screenshots/dashboard.png)
-![Detail](public/screenshots/detail.png)
-![Edit](public/screenshots/edit.png)
+![Homepage](/screenshots/homepage.png)
+![LoginPage](/screenshots/login.png)
+![Signup](/screenshots/signup.png)
+![Dashboard](/screenshots/dashboard.png)
+![Detail](/screenshots/detail.png)
+![Edit](/screenshots/edit.png)
 ## Tech Stack
 
 - **Frontend Framework**: [Next.js](https://nextjs.org/)
