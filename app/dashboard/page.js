@@ -4,9 +4,9 @@ import Link from 'next/link';
 import styles from './page.module.css';
 import Logout from '@/components/logout';
 
-export default function Dashboard() {
+export default async  function Dashboard() {
   // to fetch name of login user instead of verifying token.
-  const user = verifyToken();
+  const user = await verifyToken();
 
   return (
     <div className={styles.container}>
