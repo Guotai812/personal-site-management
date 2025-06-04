@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Personal Site Management Panel
 
-## Getting Started
+## Overview
 
-First, run the development server:
+This is the management interface for my personal website. It provides a secure way to control and update the content displayed on my personal site, including the introduction, experience, and project listings — making it more flexible and easier to maintain.
+
+## Features
+
+- **Authentication**:
+    - Welcome page and secure login system using **JWT (JSON Web Tokens)**.
+    - Middleware route protection: pages are inaccessible without a valid login.
+    - Prevents logged-in users from accessing the login page again.
+    - After successful login, users are redirected to the dashboard.
+
+- **Dashboard**:
+    - Provides navigation to:
+        - Manage Introduction content
+        - Manage Experience entries
+        - Manage Project listings
+        - Log out
+
+- **Content Management**:
+    - Add, edit, and delete content in each section.
+    - Updates are immediately reflected on the linked [personal site](https://your-personal-site.com).
+
+> This management panel is intended for **personal use only** and is not publicly deployed.
+
+## Screenshots
+![Homepage](public/screenshots/homepage.png)
+![LoginPage](public/screenshots/login.png)
+![Signup](public/screenshots/signup.png)
+![Dashboard](public/screenshots/homepage.png)
+![Detail](public/screenshots/detail.png)
+![Edit](public/screenshots/edit.png)
+## Tech Stack
+
+- **Frontend Framework**: [Next.js](https://nextjs.org/)
+- **Authentication**: **JWT** with middleware protection
+- **Database**: [MongoDB](https://www.mongodb.com/)
+
+## Setup Instructions
+
+To run the project locally:
 
 ```bash
+git clone https://github.com/your-username/personal-site-management.git
+cd personal-site-management
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
