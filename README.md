@@ -29,7 +29,7 @@ This is the management interface for my personal website. It provides a secure w
 ![Homepage](public/screenshots/homepage.png)
 ![LoginPage](public/screenshots/login.png)
 ![Signup](public/screenshots/signup.png)
-![Dashboard](public/screenshots/homepage.png)
+![Dashboard](public/screenshots/dashboard.png)
 ![Detail](public/screenshots/detail.png)
 ![Edit](public/screenshots/edit.png)
 ## Tech Stack
